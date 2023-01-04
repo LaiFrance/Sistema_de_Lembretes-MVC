@@ -4,7 +4,8 @@
   "description": "gerenciamento de lembretes",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "Laise Farias France",
   "license": "ISC",
