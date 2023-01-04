@@ -1,0 +1,14 @@
+{
+  "name": "sistema-de-lembretes",
+  "version": "1.0.0",
+  "description": "gerenciamento de lembretes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Laise Farias France",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
