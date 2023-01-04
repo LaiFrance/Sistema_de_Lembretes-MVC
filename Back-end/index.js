@@ -5,7 +5,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 // ROTA
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   res.render("index");
 })
 
