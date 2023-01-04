@@ -1,0 +1,22 @@
+{
+  "lembretes": [
+    {
+      "id": 1,
+      "descricao": "teste"
+    },
+    {
+      "id": 2,
+      "descricao": "teste2"
+    }
+  ],
+  "pendentes": [
+    {
+      "id": 1,
+      "descricao": "teste"
+    },
+    {
+      "id": 2,
+      "descricao": "teste2"
+    }
+  ]
+}
