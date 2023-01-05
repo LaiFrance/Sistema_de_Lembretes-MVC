@@ -65,6 +65,12 @@
                   placeholder="Insira um Lembrete"
                   
                 />
+                <input type="date" name="data" id="data"
+                type="date"
+                
+
+                />
+              
                 <button type="submit" class="btn btn-primary" id="add_button">
                   Adicionar
                   <i class="fa-sharp fa-solid fa-plus"></i>
@@ -103,7 +109,7 @@
               <ul>
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
-                  <%= lembrete.lembrete %> | <%= lembrete.data.toLocaleDateString() %>
+                  <%= lembrete.lembrete + " -  " + lembrete.data.toLocaleDateString() %> 
                   <a href="/delete/<%= lembrete._id %>" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
                   </a>
