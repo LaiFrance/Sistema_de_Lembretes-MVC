@@ -11,7 +11,7 @@ const connectToDb = () => {
       console.log('Conectado ao banco de dados! MONGODB ATLAS CONECTADO!')
     })
     .catch((err) => {
-      console.log('Erro ao conectar ao banco de dados: ', err)
+      console.log('Erro ao conectar ao banco de dados ', err)
     })
 }
 
