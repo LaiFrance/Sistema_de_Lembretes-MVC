@@ -24,25 +24,15 @@
       <div class="container">
         <h1 class="display-3">Lembretes</h1>
         <p class="lead">adicione lembretes a sua lista de Tarefas</p>
-        <div class="form-group text-center">
-          <textarea
-            class="form-control"
-            id="texto"
-            rows="5"
-          ></textarea>
-        </div>
-        <br />
+       
         <div id="error"></div>
         
         <br />
 
         <!--botoes e funcionalidades-->
         <div id="buttons">
-          <button type="submit" class="btn btn-primary" id="btnAdd" >
-            Adicionar
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </button>
-          <button type="submit" class="btn btn-danger">
+         
+          <button type="submit" class="btn btn-danger" id="btnClear">
             Excluir
             <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
           </button>
@@ -69,6 +59,18 @@
               <i class="fa-sharp fa-solid fa-square-plus"></i>
               Novo Lembrete
             </h3>
+            <div class="form-group text-center">
+              <textarea
+                class="form-control"
+                id="myInput"
+                rows="5"
+              ></textarea>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary" id="btnAdd" >
+              Adicionar
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </button>
           </div>
         </div>
 
@@ -78,6 +80,10 @@
               <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
               Lembretes Pendentes
             </h3>
+            <div id="data">
+
+            </div>
+            <br>
           </div>
         </div>
       </div>
