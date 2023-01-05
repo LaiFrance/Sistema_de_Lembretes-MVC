@@ -56,6 +56,7 @@
               Novo Lembrete
             </h3>
             <div class="form-group text-center">
+              <% if (lembrete == null) { %>
               <form action="/create" method="post">
                 <input
                   type="text"
@@ -70,6 +71,24 @@
                 </button>
                 
               </form>
+              <% } else { %>
+              <form action="/update" method="post">
+                <input
+                  type="text"
+                  name="lembrete"
+                  id="lembrete"
+                  placeholder="Atualizar Lembrete"
+                  value="<%= lembrete.lembrete %>"
+                  
+                />
+                <button type="submit" class="btn btn-primary" id="add_button">
+                  Atualizar
+                  <i class="fa-sharp fa-solid fa-plus"></i>
+                </button>
+                
+              </form>
+              <% } %>
+              
             </div>
             <br />
           </div>
@@ -85,13 +104,13 @@
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
                   <%= lembrete.lembrete %> | <%= lembrete.data.toLocaleDateString() %>
-                  <button type="submit" class="btn btn-danger" id="btnClear">
+                  <a type="submit" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
-                  </button>
+                  </a>
                   
-                  <button type="submit" class="btn btn-info" id="btnEdit">
+                  <a href="/getById/<%= lembrete._id %>" class="btn btn-info" id="btnEdit">
                     <i class="fa-sharp fa-solid fa-pen"></i>
-                  </button>
+                  </a>
                   
                 </li>
                 <br>
