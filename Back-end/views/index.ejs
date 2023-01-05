@@ -31,10 +31,7 @@
 
         <!--botoes e funcionalidades-->
         <div id="buttons">
-          <button type="submit" class="btn btn-danger" id="btnClear">
-            Excluir
-            <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
-          </button>
+         
           <button type="submit" class="btn btn-warning">
             Limpar Lista
             <i class="fa-sharp fa-solid fa-list"></i>
@@ -65,12 +62,13 @@
                   name="lembrete"
                   id="lembrete"
                   placeholder="Insira um Lembrete"
+                  
                 />
                 <button type="submit" class="btn btn-primary" id="add_button">
                   Adicionar
                   <i class="fa-sharp fa-solid fa-plus"></i>
                 </button>
-                >
+                
               </form>
             </div>
             <br />
@@ -86,7 +84,17 @@
               <ul>
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
-                  <%= lembrete.lembrete %> | <%= lembrete.data.toLocaleDateString() %></li>
+                  <%= lembrete.lembrete %> | <%= lembrete.data.toLocaleDateString() %>
+                  <button type="submit" class="btn btn-danger" id="btnClear">
+                    <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
+                  </button>
+                  
+                  <button type="submit" class="btn btn-info" id="btnEdit">
+                    <i class="fa-sharp fa-solid fa-pen"></i>
+                  </button>
+                  
+                </li>
+                <br>
                 <% }); %>
               </ul>
             <br />
