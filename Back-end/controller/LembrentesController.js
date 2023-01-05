@@ -42,8 +42,8 @@ const getById = async (req, res) => {
     }
 }
 
+// atualiza o lembrete
 const updateOneLembrete = async (req, res) => {
-
     try{
         const lembrete = req.body;
         // achar id altera objeto
@@ -55,10 +55,24 @@ const updateOneLembrete = async (req, res) => {
     }
 }
 
+// modal para deletar lembrete
+const confirmDeleteLembrete = async (req, res) => {
+    try{
+        const lembreteDelete = await Lembrete.deleteOne({ _id: req.params.id });
+        const lembretesList = await Lembrete.find();
+        res.render('index', {lembrete: null, lembretesList, lembreteDelete});
+    }
+    catch(err){
+        res.status(500).send({error: 'Erro ao deletar o lembrete'});
+    }
+
+}
+
 
 module.exports = {
     getAllLembrentes,
     createLembrete,
     getById,
-    updateOneLembrete
+    updateOneLembrete,
+    confirmDeleteLembrete
 };

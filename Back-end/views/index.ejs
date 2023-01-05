@@ -104,7 +104,7 @@
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
                   <%= lembrete.lembrete %> | <%= lembrete.data.toLocaleDateString() %>
-                  <a type="submit" class="btn btn-danger" id="btnClear">
+                  <a href="/delete/<%= lembrete._id %>" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
                   </a>
                   
