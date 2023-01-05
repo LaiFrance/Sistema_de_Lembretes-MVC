@@ -32,10 +32,10 @@
         <!--botoes e funcionalidades-->
         <div id="buttons">
          
-          <button type="submit" class="btn btn-warning">
+          <a href="/limpar" class="btn btn-warning">
             Limpar Lista
             <i class="fa-sharp fa-solid fa-list"></i>
-          </button>
+          </a>
           <button type="submit" class="btn btn-black">
             <i class="fa-sharp fa-solid fa-share"></i>
           </button>
@@ -109,7 +109,7 @@
               <ul>
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
-                  <%= lembrete.lembrete + " -  " + lembrete.data.toLocaleDateString() %> 
+                  <%= lembrete.lembrete %> - <%= lembrete.data.toLocaleDateString() %>
                   <a href="/delete/<%= lembrete._id %>" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
                   </a>

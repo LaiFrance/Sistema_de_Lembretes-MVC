@@ -68,11 +68,22 @@ const confirmDeleteLembrete = async (req, res) => {
 
 }
 
+const deleteAllLembretes = async (req, res) => {
+    try{
+        const deleteAll = await Lembrete.deleteMany();
+        const lembretesList = await Lembrete.find();
+        res.render('index', {lembrete: null, lembretesList, deleteAll});
+    }
+    catch(err){
+        res.status(500).send({error: 'Erro ao deletar todos os lembretes'});
+    }
+}
 
 module.exports = {
     getAllLembrentes,
     createLembrete,
     getById,
     updateOneLembrete,
-    confirmDeleteLembrete
+    confirmDeleteLembrete,
+    deleteAllLembretes
 };

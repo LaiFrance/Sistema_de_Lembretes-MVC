@@ -7,5 +7,8 @@ routes.post('/create', LembrentesController.createLembrete);
 routes.get('/getById/:id', LembrentesController.getById);
 routes.post('/updateOne/:id', LembrentesController.updateOneLembrete);
 routes.get('/delete/:id', LembrentesController.confirmDeleteLembrete);
+routes.get('/limpar', LembrentesController.deleteAllLembretes);
+
+
 
 module.exports = routes;
