@@ -32,13 +32,33 @@ const createLembrete = async (req, res) => {
 // pega o id do lembrete
 const getById = async (req, res) => {
     // PARAMETROS DA URL
-    const lembrete = await Lembrete.findOne({_id: req.params.id});
-    const lembretesList = await Lembrete.find();
-    res.render('index', {lembretesList, lembrete});
+    try{
+        const lembrete = await Lembrete.findOne({_id: req.params.id});
+        const lembretesList = await Lembrete.find();
+        return res.render('index', {lembretesList, lembrete});
+    }
+    catch(err){
+        res.status(500).send({error: 'Erro ao buscar o lembrete'});
+    }
 }
+
+const updateOneLembrete = async (req, res) => {
+
+    try{
+        const lembrete = req.body;
+        // achar id altera objeto
+        await Lembrete.updateOne({ _id: req.params.id }, lembrete);
+        return res.redirect('/');
+    }
+    catch(err){
+        res.status(500).send({error: 'Erro ao atualizar o lembrete'});
+    }
+}
+
 
 module.exports = {
     getAllLembrentes,
     createLembrete,
-    getById
+    getById,
+    updateOneLembrete
 };

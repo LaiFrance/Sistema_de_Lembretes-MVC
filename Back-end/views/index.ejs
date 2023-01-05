@@ -72,7 +72,7 @@
                 
               </form>
               <% } else { %>
-              <form action="/update" method="post">
+              <form action="/updateOne/<%= lembrete._id %>" method="post">
                 <input
                   type="text"
                   name="lembrete"
