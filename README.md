@@ -146,6 +146,7 @@ Durante a execução do projeto aprendi bastante,busquei entender sobre o NODE.J
 * Clean code 
 * Tratamento de erros
 * Adicionar documentação `Swagger` a aplicação.
+* Hospedar a aplicação no  `Heroku ou Vercel`
 
 ---
 Desenvolvido por [laise france](https://www.linkedin.com/in/laise-france/)
