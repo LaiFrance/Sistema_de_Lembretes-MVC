@@ -1,5 +1,6 @@
 # Sistema de Lembretes
-desenvolvido para o desafio técnico da DTI. Nessa aplicação é possível CRIAR, EDITAR, EXCLUIR e ATUALIZAR.
+Desenvolvido para o desafio técnico da DTI digital. Nessa aplicação é possível CRIAR, EDITAR, EXCLUIR e ATUALIZAR.
+
 
 ![Lembretes e mais 21 páginas ](https://user-images.githubusercontent.com/91226847/211029485-5445f296-0c9d-4a0c-b73e-68791994523e.png)
 
@@ -131,7 +132,10 @@ https://user-images.githubusercontent.com/91226847/210959783-f182bd49-ecb9-4fcd-
 
 #### Foram 2 dias de desenvolvimento
 
-No desafio havia a possibilidade de escolher qualquer linguagem de Programação e banco de Dados, optei por utilizar o MONGODB 
+No desafio havia a possibilidade de escolher qualquer linguagem de Programação e banco de Dados, optei por utilizar o
+<br>
+MONGODB pois ele oferece maior segurança, confiabilidade e eficiência, além da flexibilidade de modificar a estrutura ou esquema de dados.
+<br>
 Durante a execução do projeto aprendi bastante,busquei entender sobre o NODE.JS , EJS E BANCO DE DADOS MONGODB
 
 
