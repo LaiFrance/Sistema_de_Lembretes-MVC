@@ -55,7 +55,7 @@
               <i class="fa-sharp fa-solid fa-square-plus"></i>
               Novo Lembrete
             </h3>
-            <div class="form-group text-center">
+            <div id="form">
               <% if (lembrete == null) { %>
               <form action="/create" method="post">
                 <input
@@ -65,9 +65,11 @@
                   placeholder="Insira um Lembrete"
                   
                 />
-                <input type="date" name="data" id="data"
-                type="date"
-                
+                <input 
+                  type= "datetime-local"
+                  name="data"
+                  id="data"
+                  
 
                 />
               
@@ -109,7 +111,12 @@
               <ul>
                 <% lembretesList.forEach((lembrete) => { %>
                 <li>
-                  <%= lembrete.lembrete %> - <%= lembrete.data.toLocaleDateString() %>
+                  <div>
+                    
+                    <span><%= lembrete.lembrete %></span>
+                    <p><%= lembrete.data %></p>
+                  </div>
+                 
                   <a href="/delete/<%= lembrete._id %>" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
                   </a>

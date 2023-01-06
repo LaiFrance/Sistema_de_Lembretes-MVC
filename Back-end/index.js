@@ -14,11 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded());
 app.use(routes)
 
-// ROTA
-// app.get('/', (req, res) => {
-//   res.render("index");
-// })
-
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
     });
+
+module.exports = app;
