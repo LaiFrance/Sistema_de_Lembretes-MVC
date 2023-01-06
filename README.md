@@ -66,65 +66,55 @@ Para rodar os testes, rode o seguinte comando
   npm run test
 ```
 
-
-## Melhorias
-
-Que melhorias você fez no seu código? Ex: refatorações, melhorias de performance, acessibilidade, etc
-
-
-## Roadmap
-
-- Melhorar o suporte de navegadores
-
-- Adicionar mais integrações
-
-
-## Aprendizados
-
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
-
-
-## Usado por
-
-Esse projeto é usado pelas seguintes empresas:
-
-- Empresa 1
-- Empresa 2
-
-
 ## Screenshots
 
 
 
+# 📌  Rotas e retornos dos endpoints
 
 ## Documentação da API
 
-#### Retorna todos os itens
+#### Retorna Pagina de lembrentes
 
 ```http
-  GET /api/items
+  GET /
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
-
-#### Retorna um item
+#### Cria um lembrete
 
 ```http
-  GET /api/items/${id}
+  POST/create
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+#### Pega id do lembrete
 
-#### add(num1, num2)
+```http
+  GET/getById/:id
+```
+### Edita Lembrete e Atualiza
 
-Recebe dois números e retorna a sua soma.
+```http
+  POST/updateOne/:id'
+```
+### Delete um Lembrete da Lista
+```http
+  GET/delete/:id
+```
+### Limpa toda Lista de Lembretes
 
+```http
+  GET/limpar
+```
 
 ## Demonstração
+
+
+
+
+
+
+https://user-images.githubusercontent.com/91226847/210959783-f182bd49-ecb9-4fcd-b79e-0c6bfefcd186.mp4
+
 
 
 
