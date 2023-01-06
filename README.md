@@ -122,10 +122,6 @@ https://user-images.githubusercontent.com/91226847/210959783-f182bd49-ecb9-4fcd-
 
 
 
-## Feedback
-
-
-
 
 ## Licença
 
