@@ -6,7 +6,7 @@ Desenvolvido para o desafio técnico da DTI digital. Nessa aplicação é possí
 
 
 ## Funcionalidades
-
+- Adicionar DATA E HORA DO LEMBRETE
 - Criar Lembretes
 - Excluir Lembretes
 - Excluir Lista de Lembretes
@@ -149,7 +149,6 @@ Durante a execução do projeto aprendi bastante,busquei entender sobre o NODE.J
 ### Pontos de melhoria
 
 * Elaborar mais TESTES NO BACK-END E FRONT-END
-* Formato das Datas 
 * Clean code 
 * Tratamento de erros
 * Adicionar documentação `Swagger` a aplicação.
