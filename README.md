@@ -14,11 +14,11 @@
 
 ## Stack utilizada
 
-**Front-end:** Javascript
+**Front-end:** Javascript, Bootstrap, fontAwesome, html, css
 
 **Back-end:** Node, Express, MongoDB
 
-**Testes:** Jest
+**Testes:** Jest, superteste
 
 
 
@@ -66,31 +66,9 @@ Para rodar os testes, rode o seguinte comando
   npm run test
 ```
 
-
-## Melhorias
-
-Que melhorias você fez no seu código? Ex: refatorações, melhorias de performance, acessibilidade, etc
-
-
-## Roadmap
-
-- Melhorar o suporte de navegadores
-
-- Adicionar mais integrações
-
-
 ## Aprendizados
 
 O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
-
-
-## Usado por
-
-Esse projeto é usado pelas seguintes empresas:
-
-- Empresa 1
-- Empresa 2
-
 
 ## Screenshots
 
