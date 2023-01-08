@@ -73,7 +73,7 @@
 
                 />
               
-                <button type="submit" class="btn btn-primary" id="add_button">
+                <button  type="submit" class="btn btn-primary" id="add_button">
                   Adicionar
                   <i class="fa-sharp fa-solid fa-plus"></i>
                 </button>
@@ -109,7 +109,7 @@
               Lembretes Pendentes
             </h3>
               <ul>
-                <% lembretesList.forEach((lembrete) => { %>
+                <% lembretesList.sort((a, b) => a.data - b.data).forEach((lembrete) => { %>
                 <li>
                   <div>
                     
@@ -120,11 +120,10 @@
                   <a href="/delete/<%= lembrete._id %>" class="btn btn-danger" id="btnClear">
                     <i data-fa-symbol="delete" class="fa-solid fa-trash fa-fw"></i>
                   </a>
-                  
                   <a href="/getById/<%= lembrete._id %>" class="btn btn-info" id="btnEdit">
                     <i class="fa-sharp fa-solid fa-pen"></i>
                   </a>
-                  
+                    
                 </li>
                 <br>
                 <% }); %>
