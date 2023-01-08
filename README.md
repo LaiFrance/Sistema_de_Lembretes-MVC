@@ -1,5 +1,8 @@
 # Sistema de Lembretes
+Desenvolvido para o desafio técnico da DTI digital. Nessa aplicação é possível CRIAR, EDITAR, EXCLUIR e ATUALIZAR.
 
+
+![Lembretes e mais 21 páginas ](https://user-images.githubusercontent.com/91226847/211029485-5445f296-0c9d-4a0c-b73e-68791994523e.png)
 
 
 ## Funcionalidades
@@ -21,7 +24,9 @@
 **Testes:** Jest, superteste
 
 
-
+ ## 🚀 Começando
+ 
+ As instruções permitirão que você obtenha uma cópia do projeto na sua máquina local para fins de desenvolvimento e teste.
 
 ## Rodando localmente
 
@@ -66,55 +71,92 @@ Para rodar os testes, rode o seguinte comando
   npm run test
 ```
 
+<<<<<<< HEAD
 ## Aprendizados
 
 O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
 
+=======
+>>>>>>> 81074f7f18ead1b96ace25c2e5fb8552c08e4845
 ## Screenshots
 
+![index spec js - Sistemas de Lembretes Javascript - ](https://user-images.githubusercontent.com/91226847/210962316-698af75a-01e5-4c5b-a828-0530350050a8.png)
+
+![Mongodb-PNG-Image-HD](https://user-images.githubusercontent.com/91226847/211031218-1b1498df-87f9-4bce-ab88-1cb04acdec60.png)
 
 
+![Data _ Cloud_ MongoDB Cloud (1)](https://user-images.githubusercontent.com/91226847/210962723-a81b9e52-4aa6-46d4-938e-4d1f96c7a0dd.png)
+
+
+
+# 📌  Rotas e retornos dos endpoints
 
 ## Documentação da API
 
-#### Retorna todos os itens
+#### Retorna Pagina de lembrentes
 
 ```http
-  GET /api/items
+  GET /
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
-
-#### Retorna um item
+#### Cria um lembrete
 
 ```http
-  GET /api/items/${id}
+  POST/create
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+#### Pega id do lembrete
 
-#### add(num1, num2)
+```http
+  GET/getById/:id
+```
+### Edita Lembrete e Atualiza
 
-Recebe dois números e retorna a sua soma.
+```http
+  POST/updateOne/:id'
+```
+### Delete um Lembrete da Lista
+```http
+  GET/delete/:id
+```
+### Limpa toda Lista de Lembretes
 
+```http
+  GET/limpar
+```
 
 ## Demonstração
 
 
 
 
-## Feedback
 
 
+https://user-images.githubusercontent.com/91226847/210959783-f182bd49-ecb9-4fcd-b79e-0c6bfefcd186.mp4
 
 
-## Licença
+### Sobre o desenvolvimento
 
-[MIT](https://choosealicense.com/licenses/mit/)
+#### Foram 2 dias de desenvolvimento
+
+No desafio havia a possibilidade de escolher qualquer linguagem de Programação e banco de Dados, optei por utilizar o
+<br>
+MONGODB pois ele oferece maior segurança, confiabilidade e eficiência, além da flexibilidade de modificar a estrutura ou esquema de dados.
+<br>
+Durante a execução do projeto aprendi bastante,busquei entender sobre o NODE.JS , EJS E BANCO DE DADOS MONGODB
+
+
+### Pontos de melhoria
+
+* Elaborar mais TESTES NO BACK-END E FRONT-END
+* Formato das Datas 
+* Clean code 
+* Tratamento de erros
+* Adicionar documentação `Swagger` a aplicação.
+* Hospedar a aplicação no  `Heroku ou Vercel`
+
+---
+Desenvolvido por [laise france](https://www.linkedin.com/in/laise-france/)
 
 
 
