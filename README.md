@@ -34,6 +34,12 @@ Clone o projeto
   git clone https://github.com/LaiFrance/Sistema_de_Lembretes.git
 ```
 
+Entre na pasta Sistema_de_Lembretes
+
+```bash
+  cd Sistema_de_Lembretes
+```
+
 Entre no diretório do projeto
 
 ```bash
