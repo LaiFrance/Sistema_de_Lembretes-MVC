@@ -2,11 +2,9 @@
 Desenvolvido para o desafio técnico da DTI digital. Nessa aplicação é possível CRIAR, EDITAR, EXCLUIR e ATUALIZAR.
 
 
-![Lembretes e mais 21 páginas ](https://user-images.githubusercontent.com/91226847/211029485-5445f296-0c9d-4a0c-b73e-68791994523e.png)
-
-
 ## Funcionalidades
 - Adicionar DATA E HORA DO LEMBRETE
+- Ordenar Lembretes por DATA
 - Criar Lembretes
 - Excluir Lembretes
 - Excluir Lista de Lembretes
@@ -34,6 +32,12 @@ Clone o projeto
 
 ```bash
   git clone https://github.com/LaiFrance/Sistema_de_Lembretes.git
+```
+
+Entre na pasta Sistema_de_Lembretes
+
+```bash
+  cd Sistema_de_Lembretes
 ```
 
 Entre no diretório do projeto
