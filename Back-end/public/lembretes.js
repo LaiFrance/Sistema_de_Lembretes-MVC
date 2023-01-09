@@ -1,4 +1,3 @@
-
 // document.addEventListener('DOMContentLoaded', function () {
 //   console.log('DOM carregado com sucesso!')
 
@@ -8,20 +7,20 @@
 //   })
 // })
 
-function orderLembretes (lembretes) {
-  lembretes.sort(function (a, b) {
-    return a.id - b.id
-  })
-  return lembretes
-}
+// function orderLembretes (lembretes) {
+//   lembretes.sort(function (a, b) {
+//     return a.id - b.id
+//   })
+//   return lembretes
+// }
 
 
-// // função para verificar se há texto no input
+// função para verificar se há texto no input
 // function checkInput(texto) {
 //   if (texto == null || texto == '' || texto.lenght < 1) {
-//     return false
+//     return showError()
 //   } else {
-//     return true
+//     return clearError()
 //   }
 // }
 // // mostrar erro
