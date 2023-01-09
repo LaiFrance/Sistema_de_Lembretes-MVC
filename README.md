@@ -75,13 +75,7 @@ Para rodar os testes, rode o seguinte comando
   npm run test
 ```
 
-<<<<<<< HEAD
-## Aprendizados
 
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
-
-=======
->>>>>>> 81074f7f18ead1b96ace25c2e5fb8552c08e4845
 ## Screenshots
 
 ![index spec js - Sistemas de Lembretes Javascript - ](https://user-images.githubusercontent.com/91226847/210962316-698af75a-01e5-4c5b-a828-0530350050a8.png)
