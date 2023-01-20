@@ -123,14 +123,13 @@ Para rodar os testes, rode o seguinte comando
   GET/limpar
 ```
 
-## Demonstração
 
 
 
 
 
 
-https://user-images.githubusercontent.com/91226847/210959783-f182bd49-ecb9-4fcd-b79e-0c6bfefcd186.mp4
+
 
 
 ### Sobre o desenvolvimento
