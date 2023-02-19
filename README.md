@@ -1,159 +1,115 @@
-# Sistema de Lembretes
-Desenvolvido para o desafio técnico da DTI digital. Nessa aplicação é possível CRIAR, EDITAR, EXCLUIR e ATUALIZAR.
+# MINI ESTANTE 📚
+Desenvolvimento feito pelo Grupo 4 do Projeto Java para concluir o Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
+Essa aplicação simula uma biblioteca virtual 
 
+## Funcionalidades 💻
+o usuário é capaz de :
+- [x] cadastrar o cliente 
+- [x] excluir clientes
+- [x] ver lista de todos os clientes cadastrados
+- [x] ver os livros do inventário
+- [x] devolver livros 
+- [x] trocar livros 
 
-## Funcionalidades
-- Adicionar DATA E HORA DO LEMBRETE
-- Ordenar Lembretes por DATA
-- Criar Lembretes
-- Excluir Lembretes
-- Excluir Lista de Lembretes
-- Editar Lembretes
-- Exibir data futura no Lembrete
-- Atualizar Lembrete 
 
 
 ## Stack utilizada
 
-**Front-end:** Javascript, Bootstrap, fontAwesome, html, css
-
-**Back-end:** Node, Express, MongoDB
-
-**Testes:** Jest, superteste
+<img src="https://inforchannel.com.br/wp-content/uploads/2021/03/e2d2f80e-java-logo-1-1536x860.png" width="100px;" alt="Foto da logo da linguagem Java"/><br>
 
 
  ## 🚀 Começando
  
- As instruções permitirão que você obtenha uma cópia do projeto na sua máquina local para fins de desenvolvimento e teste.
+ As instruções permitirão que você obtenha uma cópia do projeto na sua máquina local para fins de desenvolvimento.<br>
+ Para instalar o projeto, siga estas etapas:
 
 ## Rodando localmente
 
 Clone o projeto
 
 ```bash
-  git clone https://github.com/LaiFrance/Sistema_de_Lembretes.git
+  git clone https://github.com/GustavoSantiago81/miniEstante_ProjetoJava.git
 ```
 
-Entre na pasta Sistema_de_Lembretes
+Entre na pasta miniEstante_ProjetoJava
 
 ```bash
-  cd Sistema_de_Lembretes
+   cd miniEstante_ProjetoJava
+
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd Back-end
-```
-
-Instale as dependências
-
-```bash
-  npm install
-```
-
-Inicie o servidor
-
-```bash
-  npm run dev
-
-```
-
-
-
-## Rodando os testes
-
-Entre na Pasta Testes
-
-```bash
-  cd Testes
-```
-
-Para rodar os testes, rode o seguinte comando
-
-```bash
-  npm run test
+  cd miniEstante
 ```
 
 
 ## Screenshots
 
-![index spec js - Sistemas de Lembretes Javascript - ](https://user-images.githubusercontent.com/91226847/210962316-698af75a-01e5-4c5b-a828-0530350050a8.png)
 
-![Mongodb-PNG-Image-HD](https://user-images.githubusercontent.com/91226847/211031218-1b1498df-87f9-4bce-ab88-1cb04acdec60.png)
+## 📌  Sobre o desenvolvimento
 
-
-![Data _ Cloud_ MongoDB Cloud (1)](https://user-images.githubusercontent.com/91226847/210962723-a81b9e52-4aa6-46d4-938e-4d1f96c7a0dd.png)
+ Foram x dias de desenvolvimento
 
 
+## Pontos de melhoria
 
-# 📌  Rotas e retornos dos endpoints
-
-## Documentação da API
-
-#### Retorna Pagina de lembrentes
-
-```http
-  GET /
-```
-
-#### Cria um lembrete
-
-```http
-  POST/create
-```
-
-#### Pega id do lembrete
-
-```http
-  GET/getById/:id
-```
-### Edita Lembrete e Atualiza
-
-```http
-  POST/updateOne/:id'
-```
-### Delete um Lembrete da Lista
-```http
-  GET/delete/:id
-```
-### Limpa toda Lista de Lembretes
-
-```http
-  GET/limpar
-```
-
-
-
-
-
-
-
-
-
-
-### Sobre o desenvolvimento
-
-#### Foram 2 dias de desenvolvimento
-
-No desafio havia a possibilidade de escolher qualquer linguagem de Programação e banco de Dados, optei por utilizar o
-<br>
-MONGODB pois ele oferece maior segurança, confiabilidade e eficiência, além da flexibilidade de modificar a estrutura ou esquema de dados.
-<br>
-Durante a execução do projeto aprendi bastante,busquei entender sobre o NODE.JS , EJS E BANCO DE DADOS MONGODB
-
-
-### Pontos de melhoria
-
-* Elaborar mais TESTES NO BACK-END E FRONT-END
-* Clean code 
-* Tratamento de erros
-* Adicionar documentação `Swagger` a aplicação.
-* Hospedar a aplicação no  `Heroku ou Vercel`
 
 ---
-Desenvolvido por [laise france](https://www.linkedin.com/in/laise-france/)
-
+## Desenvolvido por:
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/becadfd">
+        <img src="https://avatars.githubusercontent.com/u/123839829?v=4" width="100px;" alt="Foto da Rebeca no GitHub"/><br>
+        <sub>
+          <b>Rebecca Damas</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Kaluribr">
+        <img src="https://avatars.githubusercontent.com/u/87100085?v=4" width="100px;" alt="Foto do Danilo"/><br>
+        <sub>
+          <b>Danilo Moraes</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ovictoru">
+        <img src="https://avatars.githubusercontent.com/u/123930982?v=4" width="100px;" alt="Foto do Gabriel"/><br>
+        <sub>
+          <b>Gabriel Farias</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ThayaneAlmeida">
+        <img src="https://avatars.githubusercontent.com/u/74434739?v=4" width="100px;" alt="Foto da Thayane no GitHub"/><br>
+        <sub>
+          <b>Thayane Almeida</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LaiFrance">
+        <img src="https://avatars.githubusercontent.com/u/91226847?v=4" width="100px;" alt="Foto da Laise no GitHub"/><br>
+        <sub>
+          <b>Laise France</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Mrnho1">
+        <img src="https://avatars.githubusercontent.com/u/110050225?v=4" width="100px;" alt="Foto do Lucas"/><br>
+        <sub>
+          <b>Lucas Marinho</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
